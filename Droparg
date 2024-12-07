@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropArg - ¡Todo lo que necesitas en un solo lugar!</title>
+    <style>
+        /* Estilos globales */
+        body {
+            font-family: 'Verdana', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+        }
+        header {
+            background-color: #ff9800;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #ff9800;
+        }
+        .hero {
+            background: linear-gradient(to right, #ff9800, #ff5722);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .product {
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            margin: 0.8rem 0;
+            color: #333;
+        }
+        .product p {
+            color: #666;
+            font-size: 0.9rem;
+            padding: 0 1rem;
+        }
+        .product button {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 0.8rem;
+            width: 100%;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .product button:hover {
+            background-color: #e64a19;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a dropArg</h1>
+        <p>Descubre lo mejor en moda, tecnología y hogar</p>
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Categorías</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <section class="hero">
+        <h2>¡Grandes descuentos este mes!</h2>
+        <p>No te pierdas nuestras ofertas exclusivas</p>
+    </section>
+    <div class="container">
+        <!-- Producto 1 -->
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Producto 1">
+            <h3>Producto 1</h3>
+            <p>Increíble calidad a un precio insuperable.</p>
+            <button onclick="alert('Producto 1 añadido al carrito')">Añadir al Carrito</button>
+        </div>
+        <!-- Producto 2 -->
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Producto 2">
+            <h3>Producto 2</h3>
+            <p>El favorito de nuestros clientes.</p>
+            <button onclick="alert('Producto 2 añadido al carrito')">Añadir al Carrito</button>
+        </div>
+        <!-- Producto 3 -->
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Producto 3">
+            <h3>Producto 3</h3>
+            <p>Perfecto para cualquier ocasión.</p>
+            <button onclick="alert('Producto 3 añadido al carrito')">Añadir al Carrito</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 dropArg. Todos los derechos reservados.</p>
+        <p>Política de privacidad | Términos y condiciones</p>
+    </footer>
+</body>
+</html>
